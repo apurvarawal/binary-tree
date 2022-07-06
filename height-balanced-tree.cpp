@@ -48,7 +48,7 @@ height isbalanced(node* root){
 
     p.Height=max(left.Height,right.Height)+1;
 
-    if(abs(left.Height-p.Height)<=1 && left.balance && right.balance){
+    if(abs(left.Height-right.Height)<=1 && left.balance && right.balance){
         p.balance=true;
     }else{
         p.balance=false;
